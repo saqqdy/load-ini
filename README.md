@@ -157,9 +157,9 @@ Convert objects to ini strings
 
 - Arguments:
 
-| Parameters | Description | Type     | Optional | Required | Default |
-| ---------- | ----------- | -------- | -------- | -------- | ------- |
-| data       | object data | `object` | -        | true     | -       |
+| Parameters | Description | Type             | Optional | Required | Default |
+| ---------- | ----------- | ---------------- | -------- | -------- | ------- |
+| data       | object data | `object` `array` | -        | true     | -       |
 
 - Returns: `string`
 
