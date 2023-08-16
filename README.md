@@ -74,7 +74,7 @@ Read and parse a .ini file
 | ---------- | ---------------- | -------- | -------- | -------- | ------- |
 | path       | path of ini file | `string` | -        | true     | -       |
 
-- Returns: `object | null`
+- Returns: `object | array`
 
 - Example:
 
@@ -88,7 +88,7 @@ loadIni('/path/of/ini_file').then(data => {
 - Types:
 
 ```ts
-declare function loadIni(path: string): Promise<Record<string, unknown> | null>
+declare function loadIni(path: string): Promise<Record<string, unknown> | unknown[]>
 ```
 
 ### loadIniSync
@@ -103,7 +103,7 @@ Read and parse a .ini file sync mode
 | ---------- | ---------------- | -------- | -------- | -------- | ------- |
 | path       | path of ini file | `string` | -        | true     | -       |
 
-- Returns: `object | null`
+- Returns: `object | array`
 
 - Example:
 
@@ -115,7 +115,7 @@ loadIniSync('/path/of/ini_file')
 - Types:
 
 ```ts
-declare function loadIniSync(path: string): Record<string, unknown> | null
+declare function loadIniSync(path: string): Record<string, unknown> | unknown[]
 ```
 
 ### parseIni
@@ -130,7 +130,7 @@ Parse ini string into object
 | ---------- | ----------- | -------- | -------- | -------- | ------- |
 | data       | ini string  | `string` | -        | true     | -       |
 
-- Returns: `object | null`
+- Returns: `object | array`
 
 - Example:
 
@@ -146,7 +146,7 @@ parseIni(`
 - Types:
 
 ```ts
-declare function parseIni(data: string): Record<string, unknown> | null
+declare function parseIni(data: string): Record<string, unknown> | unknown[]
 ```
 
 ### stringifyIni
@@ -161,7 +161,7 @@ Convert objects to ini strings
 | ---------- | ----------- | -------- | -------- | -------- | ------- |
 | data       | object data | `object` | -        | true     | -       |
 
-- Returns: `string | null`
+- Returns: `string`
 
 - Example:
 
@@ -175,7 +175,7 @@ stringifyIni({ name: 'saqqdy', age: 18 })
 - Types:
 
 ```ts
-declare function stringifyIni<T>(data: T, options?: EncodeOptions): string | null
+declare function stringifyIni<T>(data: T, options?: EncodeOptions): string
 ```
 
 ## Support & Issues
