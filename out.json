@@ -1,0 +1,1043 @@
+{
+	"id": 0,
+	"name": "index.md",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 15,
+			"name": "EncodeIniOptions",
+			"variant": "declaration",
+			"kind": 256,
+			"flags": {},
+			"children": [
+				{
+					"id": 16,
+					"name": "align",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "to specify whether to align the = characters for each section. This option will automatically enable whitespace. Defaults to false."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 9,
+							"character": 1,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L9"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 22,
+					"name": "bracketedArrays",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "to specify whether array values are appended with []. By default this is true but there are some ini parsers that instead treat duplicate names as arrays."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 33,
+							"character": 1,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L33"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 20,
+					"name": "newline",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "to specify whether to put an additional newline after a section header. Some INI file parsers (for example the TOSHIBA FlashAir one) need this to parse the file successfully. By default, the additional newline is omitted."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 25,
+							"character": 1,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L25"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 21,
+					"name": "platform",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "to define which platform this INI file is expected to be used with: when platform is win32, line terminations are CR+LF, for other platforms line termination is LF. By default, the current platform name is used."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 29,
+							"character": 1,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L29"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 17,
+					"name": "section",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "which will be the first section in the encoded ini data. Defaults to none."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 13,
+							"character": 1,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L13"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 18,
+					"name": "sort",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "to specify if all keys in each section, as well as all sections, will be alphabetically sorted. Defaults to false."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 17,
+							"character": 1,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L17"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				},
+				{
+					"id": 19,
+					"name": "whitespace",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {
+						"isOptional": true
+					},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "to specify whether to put whitespace around the = character. By default, whitespace is omitted, to be friendly to some persnickety old parsers that don't tolerate it well. But some find that it's more human-readable and pretty with the whitespace. Defaults to false."
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 21,
+							"character": 1,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L21"
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "boolean"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Properties",
+					"children": [
+						16,
+						22,
+						20,
+						21,
+						17,
+						18,
+						19
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 5,
+					"character": 17,
+					"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L5"
+				}
+			]
+		},
+		{
+			"id": 23,
+			"name": "version",
+			"variant": "declaration",
+			"kind": 32,
+			"flags": {
+				"isConst": true
+			},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 107,
+					"character": 13,
+					"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L107"
+				}
+			],
+			"type": {
+				"type": "intrinsic",
+				"name": "string"
+			},
+			"defaultValue": "..."
+		},
+		{
+			"id": 9,
+			"name": "loadIni",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 84,
+					"character": 22,
+					"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L84"
+				}
+			],
+			"signatures": [
+				{
+					"id": 10,
+					"name": "loadIni",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "load .ini"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nimport { loadIni } from 'load-ini'\nconst data = await loadIni('/path/of/ini') // \\{ \"name\": \"saqqdy\" \\}\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- result"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 84,
+							"character": 0,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L84"
+						}
+					],
+					"parameters": [
+						{
+							"id": 11,
+							"name": "path",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "file path"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "node_modules/.pnpm/typescript@5.1.6/node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Promise"
+						},
+						"typeArguments": [
+							{
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/.pnpm/typescript@5.1.6/node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Record"
+										},
+										"typeArguments": [
+											{
+												"type": "intrinsic",
+												"name": "string"
+											},
+											{
+												"type": "intrinsic",
+												"name": "unknown"
+											}
+										],
+										"name": "Record",
+										"package": "typescript"
+									},
+									{
+										"type": "array",
+										"elementType": {
+											"type": "intrinsic",
+											"name": "unknown"
+										}
+									}
+								]
+							}
+						],
+						"name": "Promise",
+						"package": "typescript"
+					}
+				}
+			]
+		},
+		{
+			"id": 12,
+			"name": "loadIniSync",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 101,
+					"character": 16,
+					"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L101"
+				}
+			],
+			"signatures": [
+				{
+					"id": 13,
+					"name": "loadIniSync",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "load .ini sync"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@example",
+								"content": [
+									{
+										"kind": "code",
+										"text": "```ts\nimport { loadIniSync } from 'load-ini'\nconst data = loadIniSync('/path/of/ini') // \\{ \"name\": \"saqqdy\" \\}\n```"
+									}
+								]
+							},
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- result"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 101,
+							"character": 0,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L101"
+						}
+					],
+					"parameters": [
+						{
+							"id": 14,
+							"name": "path",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "file path"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.1.6/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 1,
+			"name": "parseIni",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 58,
+					"character": 16,
+					"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L58"
+				}
+			],
+			"signatures": [
+				{
+					"id": 2,
+					"name": "parseIni",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "parse ini data"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- result"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 58,
+							"character": 0,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L58"
+						}
+					],
+					"parameters": [
+						{
+							"id": 3,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "file path"
+									}
+								]
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "string"
+							}
+						}
+					],
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/.pnpm/typescript@5.1.6/node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							},
+							{
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "unknown"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"id": 4,
+			"name": "stringifyIni",
+			"variant": "declaration",
+			"kind": 64,
+			"flags": {},
+			"sources": [
+				{
+					"fileName": "index.ts",
+					"line": 69,
+					"character": 16,
+					"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L69"
+				}
+			],
+			"signatures": [
+				{
+					"id": 5,
+					"name": "stringifyIni",
+					"variant": "signature",
+					"kind": 4096,
+					"flags": {},
+					"comment": {
+						"summary": [
+							{
+								"kind": "text",
+								"text": "stringify ini data"
+							}
+						],
+						"blockTags": [
+							{
+								"tag": "@returns",
+								"content": [
+									{
+										"kind": "text",
+										"text": "- result"
+									}
+								]
+							}
+						]
+					},
+					"sources": [
+						{
+							"fileName": "index.ts",
+							"line": 69,
+							"character": 0,
+							"url": "https://github.com/saqqdy/load-ini/blob/f682628/src/index.ts#L69"
+						}
+					],
+					"typeParameter": [
+						{
+							"id": 6,
+							"name": "T",
+							"variant": "typeParam",
+							"kind": 131072,
+							"flags": {}
+						}
+					],
+					"parameters": [
+						{
+							"id": 7,
+							"name": "data",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "file path"
+									}
+								]
+							},
+							"type": {
+								"type": "reference",
+								"target": -1,
+								"name": "T",
+								"refersToTypeParameter": true
+							}
+						},
+						{
+							"id": 8,
+							"name": "options",
+							"variant": "param",
+							"kind": 32768,
+							"flags": {
+								"isOptional": true
+							},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "stringify options: EncodeIniOptions"
+									}
+								]
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "reference",
+										"target": 15,
+										"name": "EncodeIniOptions",
+										"package": "load-ini"
+									}
+								]
+							}
+						}
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Interfaces",
+			"children": [
+				15
+			]
+		},
+		{
+			"title": "Variables",
+			"children": [
+				23
+			]
+		},
+		{
+			"title": "Functions",
+			"children": [
+				9,
+				12,
+				1,
+				4
+			]
+		}
+	],
+	"packageName": "load-ini",
+	"packageVersion": "1.1.0",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "<div style=\"text-align: center;\" align=\"center\">\n\n# load-ini\n\nRead and parse a .ini file\n\n[![NPM version][npm-image]][npm-url]\n[![Codacy Badge][codacy-image]][codacy-url]\n[![Test coverage][codecov-image]][codecov-url]\n[![npm download][download-image]][download-url]\n[![License][license-image]][license-url]\n\n[![Sonar][sonar-image]][sonar-url]\n\n</div>\n\n<div style=\"text-align: center; margin-bottom: 20px;\" align=\"center\">\n\n### **[Documentation](https://www.saqqdy.com/load-ini)** • **[Change Log](./CHANGELOG.md)**\n\n</div>\n\n- [load-ini](#load-ini)\n  - [Installation](#installation)\n  - [Usage](#usage)\n    - [Nodejs require](#nodejs-require)\n    - [ES6 module](#es6-module)\n  - [API Reference](#api-reference)\n    - [loadIni](#loadini)\n    - [loadIniSync](#loadinisync)\n    - [parseIni](#parseini)\n    - [stringifyIni](#stringifyini)\n  - [Support & Issues](#support--issues)\n  - [License](#license)\n\n## Installing\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```bash\n# use pnpm\n$ pnpm install load-ini\n\n# use npm\n$ npm install load-ini --save\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Usage\n\n### 1. Nodejs require\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nconst { loadIni, loadIniSync } = require('load-ini')\n\nloadIni('/path/of/ini_file').then(data => {})\nloadIniSync('/path/of/ini_file')\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### 2. ES6 module\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```js\nimport { loadIni, loadIniSync } from 'load-ini'\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## API Reference\n\n### loadIni\n\nRead and parse a .ini file\n\n- Since: "
+		},
+		{
+			"kind": "code",
+			"text": "`1.0.0`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Arguments:\n\n| Parameters | Description      | Type     | Optional | Required | Default |\n| ---------- | ---------------- | -------- | -------- | -------- | ------- |\n| path       | path of ini file | "
+		},
+		{
+			"kind": "code",
+			"text": "`string`"
+		},
+		{
+			"kind": "text",
+			"text": " | -        | true     | -       |\n\n- Returns: "
+		},
+		{
+			"kind": "code",
+			"text": "`object | array`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Example:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nloadIni('/path/of/ini_file').then(data => {\n  console.log(data)\n  // { \"name\": \"saqqdy\" }\n})\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Types:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\ndeclare function loadIni(path: string): Promise<Record<string, unknown> | unknown[]>\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### loadIniSync\n\nRead and parse a .ini file sync mode\n\n- Since: "
+		},
+		{
+			"kind": "code",
+			"text": "`1.0.0`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Arguments:\n\n| Parameters | Description      | Type     | Optional | Required | Default |\n| ---------- | ---------------- | -------- | -------- | -------- | ------- |\n| path       | path of ini file | "
+		},
+		{
+			"kind": "code",
+			"text": "`string`"
+		},
+		{
+			"kind": "text",
+			"text": " | -        | true     | -       |\n\n- Returns: "
+		},
+		{
+			"kind": "code",
+			"text": "`object | array`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Example:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nloadIniSync('/path/of/ini_file')\n// { \"name\": \"saqqdy\" }\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Types:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\ndeclare function loadIniSync(path: string): Record<string, unknown> | unknown[]\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### parseIni\n\nParse ini string into object\n\n- Since: "
+		},
+		{
+			"kind": "code",
+			"text": "`1.0.0`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Arguments:\n\n| Parameters | Description | Type     | Optional | Required | Default |\n| ---------- | ----------- | -------- | -------- | -------- | ------- |\n| data       | ini string  | "
+		},
+		{
+			"kind": "code",
+			"text": "`string`"
+		},
+		{
+			"kind": "text",
+			"text": " | -        | true     | -       |\n\n- Returns: "
+		},
+		{
+			"kind": "code",
+			"text": "`object | array`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Example:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nparseIni(`\n[user]\n    name = saqqdy\n    age = 18\n`)\n// { \"name\": \"saqqdy\", age: 18 }\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Types:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\ndeclare function parseIni(data: string): Record<string, unknown> | unknown[]\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n### stringifyIni\n\nConvert objects to ini strings\n\n- Since: "
+		},
+		{
+			"kind": "code",
+			"text": "`1.0.0`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Arguments:\n\n| Parameters | Description | Type             | Optional | Required | Default |\n| ---------- | ----------- | ---------------- | -------- | -------- | ------- |\n| data       | object data | "
+		},
+		{
+			"kind": "code",
+			"text": "`object`"
+		},
+		{
+			"kind": "text",
+			"text": " "
+		},
+		{
+			"kind": "code",
+			"text": "`array`"
+		},
+		{
+			"kind": "text",
+			"text": " | -        | true     | -       |\n\n- Returns: "
+		},
+		{
+			"kind": "code",
+			"text": "`string`"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Example:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\nstringifyIni({ name: 'saqqdy', age: 18 })\n// [user]\n//     name = saqqdy\n//     age = 18\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n- Types:\n\n"
+		},
+		{
+			"kind": "code",
+			"text": "```ts\ndeclare function stringifyIni<T>(data: T, options?: EncodeOptions): string\n```"
+		},
+		{
+			"kind": "text",
+			"text": "\n\n## Support & Issues\n\nPlease open an issue [here](https://github.com/saqqdy/load-ini/issues).\n\n## License\n\n[MIT](LICENSE)\n\n[npm-image]: https://img.shields.io/npm/v/load-ini.svg?style=flat-square\n[npm-url]: https://npmjs.org/package/load-ini\n[codacy-image]: https://app.codacy.com/project/badge/Grade/f70d4880e4ad4f40aa970eb9ee9d0696\n[codacy-url]: https://www.codacy.com/gh/saqqdy/load-ini/dashboard?utm_source=github.com&utm_medium=referral&utm_content=saqqdy/load-ini&utm_campaign=Badge_Grade\n[codecov-image]: https://img.shields.io/codecov/c/github/saqqdy/load-ini.svg?style=flat-square\n[codecov-url]: https://codecov.io/github/saqqdy/load-ini?branch=master\n[download-image]: https://img.shields.io/npm/dm/load-ini.svg?style=flat-square\n[download-url]: https://npmjs.org/package/load-ini\n[license-image]: https://img.shields.io/badge/License-MIT-blue.svg\n[license-url]: LICENSE\n[sonar-image]: https://sonarcloud.io/api/project_badges/quality_gate?project=saqqdy_load-ini\n[sonar-url]: https://sonarcloud.io/dashboard?id=saqqdy_load-ini"
+		}
+	],
+	"symbolIdMap": {
+		"0": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": ""
+		},
+		"1": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "parseIni"
+		},
+		"2": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "parseIni"
+		},
+		"3": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "data"
+		},
+		"4": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "stringifyIni"
+		},
+		"5": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "stringifyIni"
+		},
+		"6": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "T"
+		},
+		"7": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "data"
+		},
+		"8": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "options"
+		},
+		"9": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "loadIni"
+		},
+		"10": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "loadIni"
+		},
+		"11": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "path"
+		},
+		"12": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "loadIniSync"
+		},
+		"13": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "loadIniSync"
+		},
+		"14": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "path"
+		},
+		"15": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions"
+		},
+		"16": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions.align"
+		},
+		"17": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions.section"
+		},
+		"18": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions.sort"
+		},
+		"19": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions.whitespace"
+		},
+		"20": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions.newline"
+		},
+		"21": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions.platform"
+		},
+		"22": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "EncodeIniOptions.bracketedArrays"
+		},
+		"23": {
+			"sourceFileName": "src/index.ts",
+			"qualifiedName": "version"
+		}
+	}
+}
