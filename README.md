@@ -16,9 +16,22 @@ Read and parse a .ini file
 
 <div style="text-align: center; margin-bottom: 20px;" align="center">
 
-## **For API documentation, see: [API Docs](./docs/modules.md)**
+### **[Documentation](https://www.saqqdy.com/load-ini)** • **[Change Log](./CHANGELOG.md)**
 
 </div>
+
+- [load-ini](#load-ini)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Nodejs require](#nodejs-require)
+    - [ES6 module](#es6-module)
+  - [API Reference](#api-reference)
+    - [loadIni](#loadini)
+    - [loadIniSync](#loadinisync)
+    - [parseIni](#parseini)
+    - [stringifyIni](#stringifyini)
+  - [Support & Issues](#support--issues)
+  - [License](#license)
 
 ## Installing
 
@@ -28,29 +41,141 @@ $ pnpm install load-ini
 
 # use npm
 $ npm install load-ini --save
-
-# use yarn
-$ yarn add load-ini
 ```
 
 ## Usage
 
-1. use `load-ini` in async mode
+### 1. Nodejs require
 
 ```js
-import { loadIni } from 'load-ini'
+const { loadIni, loadIniSync } = require('load-ini')
 
-loadIni().then(path => {
-  console.log('result is: ', path) // { "name": "saqqdy" }
+loadIni('/path/of/ini_file').then(data => {})
+loadIniSync('/path/of/ini_file')
+```
+
+### 2. ES6 module
+
+```js
+import { loadIni, loadIniSync } from 'load-ini'
+```
+
+## API Reference
+
+### loadIni
+
+Read and parse a .ini file
+
+- Since: `1.0.0`
+
+- Arguments:
+
+| Parameters | Description      | Type     | Optional | Required | Default |
+| ---------- | ---------------- | -------- | -------- | -------- | ------- |
+| path       | path of ini file | `string` | -        | true     | -       |
+
+- Returns: `object | null`
+
+- Example:
+
+```ts
+loadIni('/path/of/ini_file').then(data => {
+  console.log(data)
+  // { "name": "saqqdy" }
 })
 ```
 
-2. use `load-ini` in sync mode
+- Types:
 
-```js
-import { loadIniSync } from 'load-ini'
+```ts
+declare function loadIni(path: string): Promise<Record<string, unknown> | null>
+```
 
-console.log('result is: ', loadIniSync()) // { "name": "saqqdy" }
+### loadIniSync
+
+Read and parse a .ini file sync mode
+
+- Since: `1.0.0`
+
+- Arguments:
+
+| Parameters | Description      | Type     | Optional | Required | Default |
+| ---------- | ---------------- | -------- | -------- | -------- | ------- |
+| path       | path of ini file | `string` | -        | true     | -       |
+
+- Returns: `object | null`
+
+- Example:
+
+```ts
+loadIniSync('/path/of/ini_file')
+// { "name": "saqqdy" }
+```
+
+- Types:
+
+```ts
+declare function loadIniSync(path: string): Record<string, unknown> | null
+```
+
+### parseIni
+
+Parse ini string into object
+
+- Since: `1.0.0`
+
+- Arguments:
+
+| Parameters | Description | Type     | Optional | Required | Default |
+| ---------- | ----------- | -------- | -------- | -------- | ------- |
+| data       | ini string  | `string` | -        | true     | -       |
+
+- Returns: `object | null`
+
+- Example:
+
+```ts
+parseIni(`
+[user]
+    name = saqqdy
+    age = 18
+`)
+// { "name": "saqqdy", age: 18 }
+```
+
+- Types:
+
+```ts
+declare function parseIni(data: string): Record<string, unknown> | null
+```
+
+### stringifyIni
+
+Convert objects to ini strings
+
+- Since: `1.0.0`
+
+- Arguments:
+
+| Parameters | Description | Type     | Optional | Required | Default |
+| ---------- | ----------- | -------- | -------- | -------- | ------- |
+| data       | object data | `object` | -        | true     | -       |
+
+- Returns: `string | null`
+
+- Example:
+
+```ts
+stringifyIni({ name: 'saqqdy', age: 18 })
+// [user]
+//     name = saqqdy
+//     age = 18
+```
+
+- Types:
+
+```ts
+declare function stringifyIni<T>(data: T, options?: EncodeOptions): string | null
 ```
 
 ## Support & Issues

@@ -23,7 +23,7 @@ function stripBom(data: string): string {
  * @param data - file path
  * @returns - result
  */
-export function parseIni(data: string): unknown | null {
+export function parseIni(data: string): Record<string, unknown> | null {
 	try {
 		return parse(stripBom(data))
 	} catch (err: any) {
@@ -59,7 +59,7 @@ export function stringifyIni<T>(data: T, options?: EncodeOptions): string | null
  * @param path - file path
  * @returns - result
  */
-export async function loadIni(path: string | Buffer | URL): Promise<unknown | null> {
+export async function loadIni(path: string): Promise<Record<string, unknown> | null> {
 	if (!existsSync(path)) {
 		console.error(`${path} is not exists`)
 		return null
@@ -78,7 +78,7 @@ export async function loadIni(path: string | Buffer | URL): Promise<unknown | nu
  * @param path - file path
  * @returns - result
  */
-export function loadIniSync(path: string | Buffer | URL): unknown | null {
+export function loadIniSync(path: string): Record<string, unknown> | null {
 	if (!existsSync(path)) {
 		console.error(`${path} is not exists`)
 		return null
